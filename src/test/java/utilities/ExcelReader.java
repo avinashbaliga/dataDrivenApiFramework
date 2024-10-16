@@ -52,7 +52,6 @@ public class ExcelReader {
                 eachRowData.add(row.getCell(counter).getStringCellValue());
             }
 
-            System.out.println(eachRowData);
             allData.add(eachRowData);
             eachRowData = new ArrayList<>();
         }
