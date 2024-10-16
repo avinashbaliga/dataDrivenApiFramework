@@ -1,0 +1,14 @@
+{
+  "comments": {
+    "basePath": "comments",
+    "httpMethod": "get"
+  },
+  "todos": {
+    "basePath": "todos",
+    "httpMethod": "get"
+  },
+  "posts": {
+    "basePath": "posts",
+    "httpMethod": "get"
+  }
+}
