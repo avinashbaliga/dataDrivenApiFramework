@@ -2,7 +2,7 @@ package dataProvider;
 
 import com.google.gson.JsonObject;
 import org.testng.annotations.DataProvider;
-import utilities.ExcelReader;
+import utilities.ExcelWorker;
 import utilities.JsonReader;
 import utilities.TestConfig;
 
@@ -27,7 +27,7 @@ public class ApiDataProvider {
     }
 
     private String[][] getApiDetailsFromExcel() {
-        ExcelReader excelReader = new ExcelReader("src/main/resources/apiDetails.xlsx");
+        ExcelWorker excelReader = new ExcelWorker("src/main/resources/apiDetails.xlsx");
         List<List<String>> apiData = excelReader.getAllData("Sheet1");
         String[][] apiDetails = new String[apiData.size()][2];
 
